@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "Praxis für Psychotherapie",
+    "base_url": "https://gehacreate.github.io/psychotherapie-praxis",
+    "base_path": "/psychotherapie-praxis",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "38",
+    "logo_text": "Praxis für Psychotherapie"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Erstgespräch vereinbaren",
+    "link": "/contact"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "footer_content": "Ein geschützter Raum für Gespräche, Klarheit und Veränderung. Verhaltenstherapie und systemische Beratung.",
+    "copyright": "© 2026 Praxis für Psychotherapie"
+  },
+
+  "metadata": {
+    "meta_author": "Praxis für Psychotherapie",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Psychotherapeutische Praxis: Verhaltenstherapie, systemische Beratung und Online-Sprechstunde. Informationen zu Ablauf, Leistungen und Kosten."
+  },
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  }
+}

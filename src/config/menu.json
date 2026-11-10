@@ -1,0 +1,28 @@
+{
+  "main": [
+    { "name": "Start", "url": "/" },
+    { "name": "Über mich", "url": "/about" },
+    { "name": "Leistungen & Kosten", "url": "/pricing" },
+    { "name": "Ratgeber", "url": "/blog" },
+    { "name": "FAQ", "url": "/faq" },
+    { "name": "Kontakt", "url": "/contact" }
+  ],
+  "footer": [
+    {
+      "name": "Praxis",
+      "menu": [
+        { "text": "Über mich", "url": "/about" },
+        { "text": "Leistungen & Kosten", "url": "/pricing" },
+        { "text": "FAQ", "url": "/faq" }
+      ]
+    },
+    {
+      "name": "Rechtliches",
+      "menu": [
+        { "text": "Impressum", "url": "/impressum" },
+        { "text": "Datenschutz", "url": "/privacy-policy" },
+        { "text": "Terminbedingungen", "url": "/terms-conditions" }
+      ]
+    }
+  ]
+}
