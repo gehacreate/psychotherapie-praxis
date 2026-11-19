@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import FaqAccordion from "../components/FaqAccordion.astro";
+import CallToActionSection from "../components/CallToActionSection.astro";
+import Heading from "../components/Heading.astro";
+import heroImage from "../assets/placeholders/hero-main-placeholder.jpg";
+
+const miniFaqs = [
+  { id: "pd-schauspielern", question: "Muss ich bei Psychodrama schauspielern?", answer: "Nein. Sie brauchen keinerlei Vorkenntnisse, und es gibt weder eine Gruppe noch ein Publikum. Die szenischen Elemente sind behutsame Werkzeuge im geschützten Einzelsetting — Sie bestimmen, was passiert und was nicht." },
+  { id: "pd-anerkannt", question: "Ist Psychodrama wissenschaftlich anerkannt?", answer: "Ja. Psychodrama ist ein eigenständiges, gesetzlich anerkanntes psychotherapeutisches Verfahren in Österreich mit fast hundertjähriger Geschichte. Zur Wirksamkeit der Psychotherapie insgesamt liegt eine solide Studienlage vor." },
+  { id: "pd-introvertiert", question: "Ich bin eher introvertiert — passt Psychodrama trotzdem?", answer: "Gerade dann. Psychodrama zwingt niemandem etwas auf; manchmal hilft das Handelnde gerade jenen Menschen, die über ihre Gefühle schwer sprechen können." },
+];
+---
+
+<Layout
+	title="Was ist Psychodrama?"
+	description="Psychodrama einfach erklärt: handlungsorientiertes Therapieverfahren aus Wien (Jacob Levy Moreno) — im Einzelsetting in Graz, gesetzlich anerkannt in Österreich."
+>
+	<PageHero
+		title="Was ist Psychodrama?"
+		description="Die Grundidee ist einfach: Manche Dinge lassen sich nicht nur besprechen. Im Psychodrama setzen Sie Ihre Themen nicht nur in Worte, sondern in Szene — und begegnen ihnen handelnd."
+		image={heroImage}
+	/>
+
+	<section class="section bg-theme-surface">
+		<div class="container narrow prose prose-lg max-w-none text-theme-text-secondary">
+			<p class="text-lg leading-relaxed mb-6">Im geschützten Rahmen der Praxis werden innere Bilder, Konflikte oder Beziehungsmuster mit einfachen Mitteln sichtbar gemacht und ausprobiert. Oft entsteht dabei ein Abstand, aus dem neue Lösungen und Perspektiven sichtbar werden.</p>
+			<p class="text-lg leading-relaxed mb-6"><strong>Wichtig:</strong> Psychodrama hat nichts mit Theater zu tun — es wird keine Szene einstudiert und nichts aufgeführt. Es findet als Einzeltherapie statt, nur Sie und ich. Es gibt kein Publikum und nichts, das Sie „können“ müssten. Nicht jede Sitzung enthält szenische Elemente; manches Mal reden wir einfach. Was wir nutzen, entscheiden wir gemeinsam — nichts geschieht ohne Ihre Zustimmung.</p>
+
+			<Heading level="h2" class="mb-6 mt-12">Die Geschichte der Methode</Heading>
+			<p class="text-lg leading-relaxed mb-6">Psychodrama entstand Anfang der 1920er Jahre in Wien: Jacob Levy Moreno, in Bukarest geboren und in Wien zum Arzt ausgebildet, entwickelte die Methode in Bad Vöslau bei Wien. 1925 ging er in die USA und machte Psychodrama weltbekannt. In Österreich ist Psychodrama als eigenständiges psychotherapeutisches Verfahren gesetzlich anerkannt und wird im Rahmen des Fachspezifikums gelehrt.</p>
+
+			<Heading level="h2" class="mb-6 mt-12">Für wen eignet sich Psychodrama?</Heading>
+			<p class="text-lg leading-relaxed mb-4">Für Erwachsene jeden Alters — bei akuten Belastungen ebenso wie bei lang bestehenden Themen. Besonders hilfreich, wenn:</p>
+			<ul class="list-disc pl-6 space-y-2 text-lg mb-6">
+				<li>sich Themen in Beziehungen wiederholen und Sie nicht weiter wissen</li>
+				<li>Ängste oder Panik Ihr Leben einschränken</li>
+				<li>Erschöpfung, Burnout oder depressive Verstimmungen anhalten</li>
+				<li>berufliche Belastungen den Alltag bestimmen</li>
+				<li>Sie einen Verlust oder eine Erkrankung verarbeiten</li>
+			</ul>
+
+			<Heading level="h2" class="mb-6 mt-12">Wie wirkt Psychodrama?</Heading>
+			<p class="text-lg leading-relaxed mb-6">Psychodrama wirkt über das Erleben. Indem Sie ein Thema nicht nur denken, sondern räumlich und körperlich erfahren, wird es greifbarer — und veränderbar. Typische Elemente sind der „Rollentausch“ (Sie nehmen für einen Moment die Position einer anderen Person ein) oder das „Doppel“ (das, was ich in Ihnen wahrnehme, bekommt behutsam Worte). Auch ein inneres Gespräch — mit einer schwierigen Entscheidung, einem verstorbenen Menschen oder einer früheren Version Ihrer selbst — kann so geführt werden.</p>
+
+			<Heading level="h2" class="mb-6 mt-12">Häufige Fragen</Heading>
+			<FaqAccordion items={miniFaqs} />
+		</div>
+	</section>
+
+	<CallToActionSection
+		heading="Am besten erleben Sie es selbst"
+		subheading="Im unverbindlichen Erstgespräch erkläre ich Ihnen Schritt für Schritt, wie wir arbeiten — ohne jede Verpflichtung."
+		primaryButtonText="Erstgespräch anfragen"
+		primaryButtonLink="/contact"
+	/>
+</Layout>

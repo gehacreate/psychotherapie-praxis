@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import FaqAccordion from "../components/FaqAccordion.astro";
+import CallToActionSection from "../components/CallToActionSection.astro";
+import heroImage from "../assets/placeholders/professional-care-placeholder.jpg";
+
+const firstTimeFaqs = [
+  { id: "ft-brauche-ich", question: "Brauche ich das wirklich?", answer: "Sie müssen es nicht brauchen — Sie dürfen es sich auch einfach wünschen. Niemand fragt Sie ab, ob Ihre Themen „schlimm genug“ sind. Wenn etwas in Ihrem Leben schwerfällt und Sie sich Unterstützung wünschen, ist das Grund genug." },
+  { id: "ft-ablauf", question: "Wie läuft so etwas ab?", answer: "Alles beginnt mit einem unverbindlichen Erstgespräch (wie beim Österreichischen Bundesverband für Psychotherapie, ÖBVP, beschrieben): Wir lernen uns kennen, Sie erzählen, was Sie bewegt, und wir schauen gemeinsam, wo Sie stehen. Erst danach entscheiden Sie, ob und wie es weitergeht." },
+  { id: "ft-vertraulich", question: "Ist das, was ich sage, wirklich vertraulich?", answer: "Ja, ausnahmslos. Ich unterliege der gesetzlichen Verschwiegenheitspflicht — das gilt für alles, was Sie mir anvertrauen, auch wenn Sie sich nach dem Erstgespräch gegen eine Therapie entscheiden." },
+  { id: "ft-kosten", question: "Was kostet die Psychotherapie?", answer: "Erstgespräch und Folgetermine kosten 100 € je Einheit (45 Minuten). Details finden Sie unter Ablauf und Kosten." },
+  { id: "ft-dauer", question: "Wie lange dauert die Therapie?", answer: "Das hängt von Ihrem Thema ab. Für umschriebene Themen reichen oft 10–25 Sitzungen, tiefer sitzende Muster brauchen manchmal länger. Wir besprechen regelmäßig, wo Sie stehen — und Sie entscheiden, wie es weitergeht." },
+  { id: "ft-nicht-wissen", question: "Was, wenn ich nicht weiß, was ich sagen soll?", answer: "Das ist die häufigste Sorge — und fast immer unbegründet. Es reicht völlig, wenn Sie sagen, warum Sie gekommen sind. Weitere Themen finden wir gemeinsam. Und falls Sie danach spüren, dass es nicht passt: Das Erstgespräch verpflichtet zu nichts." },
+];
+---
+
+<Layout
+	title="Erstes Mal Psychotherapie — was Sie erwartet"
+	description="Noch nie in Therapie gewesen? Antworten auf die häufigsten Fragen vor dem ersten Mal: Ablauf, Vertraulichkeit, Kosten, Dauer — unverbindliches Erstgespräch in Graz."
+>
+	<PageHero
+		title="Erstes Mal Psychotherapie — was Sie erwartet"
+		description="Psychotherapie ist kein Zeichen dafür, dass mit Ihnen etwas nicht stimmt. Sie ist ein Ort, an dem Sie Dinge ordnen dürfen, die Sie allein nicht mehr ordnen können. Und niemand erwartet, dass Sie dabei schon wissen, wie es geht."
+		image={heroImage}
+	/>
+
+	<section class="section bg-theme-surface">
+		<div class="container narrow">
+			<FaqAccordion items={firstTimeFaqs} />
+		</div>
+	</section>
+
+	<CallToActionSection
+		heading="Probieren Sie es einfach aus"
+		subheading="Das Erstgespräch ist unverbindlich — Sie haben danach mehr Klarheit als vorher, egal wie Sie entscheiden."
+		primaryButtonText="Erstgespräch anfragen"
+		primaryButtonLink="/contact"
+	/>
+</Layout>

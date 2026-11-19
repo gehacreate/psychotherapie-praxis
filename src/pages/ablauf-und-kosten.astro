@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import CallToActionSection from "../components/CallToActionSection.astro";
+import Heading from "../components/Heading.astro";
+import Icon from "../components/Icon.astro";
+import heroImage from "../assets/placeholders/service-detail-placeholder.jpg";
+---
+
+<Layout
+	title="Ablauf und Kosten"
+	description="Ablauf der Psychotherapie in Graz und Kosten: Erstgespräch & Folgetermine 100 € (45 Min.), Selbstzahler — Hinweise zu Zusatzversicherung und kostenlosen Alternativen. Terminabsage 24h vorher."
+>
+	<PageHero
+		title="Ablauf und Kosten"
+		description="Der erste Schritt ist oft der schwerste — aber auch der wichtigste. Alles transparent und ohne Druck: Sie entscheiden, ob und wie die Therapie beginnt."
+		image={heroImage}
+	/>
+
+	<section class="section bg-theme-surface">
+		<div class="container narrow prose prose-lg max-w-none text-theme-text-secondary">
+			<Heading level="h2" class="mb-6">Erstgespräch und Therapiestart</Heading>
+			<p class="text-lg leading-relaxed mb-6">Im unverbindlichen Erstgespräch besprechen wir in einem geschützten, wertschätzenden Rahmen Ihr Anliegen: Was bewegt Sie? Was erhoffen Sie sich? Und wie könnten gemeinsame Termine aussehen? Sie erhalten alle Informationen für Ihre Entscheidung — transparent, ohne Bewertung, ohne Druck.</p>
+			<p class="text-lg leading-relaxed mb-6"><strong>Sie entscheiden.</strong> Denn Psychotherapie gelingt vor allem dann, wenn die therapeutische Beziehung stimmt — wenn Sie das Gefühl haben, wirklich gesehen und verstanden zu werden.</p>
+			<p class="text-lg leading-relaxed mb-6">Es ist völlig in Ordnung, wenn Sie beim ersten Kontakt nervös sind — melden Sie sich einfach, so wie es Ihnen gerade möglich ist.</p>
+
+			<Heading level="h2" class="mb-6 mt-12">Kosten und Finanzierung</Heading>
+			<ul class="space-y-3 text-lg mb-6">
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Erstgespräch: 100&nbsp;€ (45 Minuten, unverbindlich).</strong></span></li>
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Folgetermine: 100&nbsp;€ pro Einheit (45 Minuten).</strong> 45 Minuten sind die gesetzliche Einheit nach dem Psychotherapiegesetz 2024; in der Praxis bleibt die Zeit flexibel.</span></li>
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Kassenabrechnung:</strong> Während der Fachausbildung unter Lehrsupervision ist eine Abrechnung über die Krankenkasse rechtlich nicht möglich; die Sitzungen werden privat getragen. Viele private Zusatzversicherungen übernehmen einen Teil der Kosten — ich unterstütze Sie gerne bei der Abklärung.</span></li>
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Kostenlose Alternativen in Graz:</strong> Netzwerk Psychotherapie Steiermark (für ÖGK-Versicherte kostenfrei über die e-card) und die psychosozialen Beratungsstellen der Gesellschaft zur Förderung seelischer Gesundheit.</span></li>
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Zahlung:</strong> bequem per Überweisung nach Rechnungserhalt per E-Mail.</span></li>
+			</ul>
+
+			<Heading level="h2" class="mb-6 mt-12">Termine, Absagen, Rhythmus</Heading>
+			<ul class="space-y-3 text-lg mb-6">
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Terminvereinbarung:</strong> Mo–Fr 09:00–18:00 Uhr; Therapietermine derzeit freitags 13:00–18:00 Uhr — gut mit dem Berufsalltag vereinbar.</span></li>
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Absage:</strong> Bitte sagen Sie Termine, die Sie nicht wahrnehmen können, möglichst 24 Stunden vorher ab (telefonisch, SMS oder E-Mail) — dann kann die Stunde einer anderen Person zugutekommen, die wartet.</span></li>
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Rhythmus:</strong> zu Beginn meist wöchentlich, später alle 1–2 Wochen oder nach Bedarf — flexibel an Sie angepasst.</span></li>
+				<li class="flex items-start"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1"><Icon name="check" size="sm" class="text-theme-primary" /></span><span><strong>Hausbesuche:</strong> bei eingeschränkter Mobilität in Graz möglich (gegen Aufwandsentschädigung von 25&nbsp;€). Online-Formate sind grundsätzlich denkbar und werden für die Zukunft im Auge behalten.</span></li>
+			</ul>
+		</div>
+	</section>
+
+	<CallToActionSection
+		heading="Bereit für den ersten Schritt?"
+		subheading="Schreiben Sie mir — ein Erstgespräch ist unverbindlich und verpflichtet zu nichts."
+		primaryButtonText="Erstgespräch anfragen"
+		primaryButtonLink="/contact"
+	/>
+</Layout>

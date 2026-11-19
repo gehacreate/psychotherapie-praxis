@@ -14,33 +14,98 @@ interface Props {
 
 const { title, description } = Astro.props;
 
-const defaultTitle = nav.brand.name;
+const siteUrl = "https://gehacreate.github.io/psychotherapie-praxis";
+const defaultTitle = `${nav.brand.name} | Psychotherapie & Psychodrama in Graz`;
 const defaultDescription =
-	"Professional Healthcare Services - Expert care delivered to your home";
+	"Psychotherapie und Psychodrama in Graz: Begleitung bei Ängsten, Depression, Burnout, Beziehungsfragen, Trauer & Verlust. Erstgespräch zeitnah möglich.";
+
+const pageTitle = title ? `${title} | ${nav.brand.name}` : defaultTitle;
+const pageDescription = description ?? defaultDescription;
+const canonical = Astro.url.href;
+const ogImage = `${siteUrl}/og-image.svg`;
+
+// GEO / Local SEO: Graz, Steiermark, Österreich (Koordinaten: Zentrum Graz)
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "MedicalBusiness",
+	"@id": `${siteUrl}/#praxis`,
+	name: nav.brand.name,
+	description: defaultDescription,
+	url: siteUrl,
+	telephone: nav.contact.phone,
+	email: nav.contact.email,
+	priceRange: "€€",
+	medicalSpecialty: ["Psychotherapy", "Psychodrama"],
+	address: {
+		"@type": "PostalAddress",
+		streetAddress: "Musterstraße 1",
+		addressLocality: "Graz",
+		postalCode: "8010",
+		addressRegion: "Steiermark",
+		addressCountry: "AT",
+	},
+	geo: {
+		"@type": "GeoCoordinates",
+		latitude: 47.0707,
+		longitude: 15.4395,
+	},
+	areaServed: [
+		{ "@type": "City", name: "Graz" },
+		{ "@type": "State", name: "Steiermark" },
+		{ "@type": "Country", name: "Österreich" },
+	],
+	openingHoursSpecification: [
+		{
+			"@type": "OpeningHoursSpecification",
+			dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			opens: "09:00",
+			closes: "18:00",
+		},
+	],
+	sameAs: [],
+};
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
-		<!-- Required meta tags -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title ?? defaultTitle}</title>
-		<meta name="description" content={description ?? defaultDescription} />
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDescription} />
+		<link rel="canonical" href={canonical} />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="de" />
 
-		<!-- Open Graph / Social Media -->
+		<!-- GEO / Local SEO -->
+		<meta name="geo.region" content="AT-6" />
+		<meta name="geo.placename" content="Graz" />
+		<meta name="ICBM" content="47.0707, 15.4395" />
+		<meta name="coverage" content="Graz, Steiermark, Österreich" />
+
+		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content={title ?? defaultTitle} />
-		<meta property="og:description" content={description ?? defaultDescription} />
+		<meta property="og:site_name" content={nav.brand.name} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:locale" content="de_AT" />
+		<meta property="og:country-name" content="Austria" />
 
-		<!-- Theme Color -->
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		<meta name="twitter:image" content={ogImage} />
+
 		<meta name="theme-color" content="#1a4d3e" />
+		<link rel="icon" type="image/svg+xml" href="/psychotherapie-praxis/favicon.svg" />
 
-		<!-- Favicon placeholder - replace with your own -->
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- Structured Data: MedicalBusiness / LocalBusiness (GEO) -->
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-		<!-- Client Router for smooth SPA-like navigation (Astro 7+) -->
 		<ClientRouter />
 	</head>
 	<body
@@ -48,131 +113,29 @@ const defaultDescription =
 	>
 		<Nav />
 		<main>
-			<!-- The page-specific content will be injected here -->
 			<slot />
 		</main>
 		<Footer />
-
-		<!-- Navigation Progress Bar -->
 		<div
 			id="nav-progress"
 			class="fixed top-0 left-0 h-1 bg-theme-primary z-[100] transition-all duration-300 ease-out"
 			style="width: 0%; opacity: 0;"
 		></div>
-
-		<!-- Theme Switcher -->
 		<ThemeSwitcher />
+		<script>
+			document.addEventListener("astro:page-load", () => {
+				const bar = document.getElementById("nav-progress");
+				if (!bar) return;
+				const onScroll = () => {
+					const h = document.documentElement;
+					const max = h.scrollHeight - h.clientHeight;
+					const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+					bar.style.width = pct + "%";
+					bar.style.opacity = pct > 2 ? "1" : "0";
+				};
+				window.addEventListener("scroll", onScroll, { passive: true });
+				onScroll();
+			});
+		</script>
 	</body>
-
-	<script>
-		// ========================================
-		// CRITICAL: Fix mobile back/forward swipe flash
-		// ========================================
-		// Bypass Astro's view transition for traverse (back/forward) navigation
-		// to let the browser use native bfcache for instant, flash-free navigation
-		document.addEventListener("astro:before-preparation", (event) => {
-			const navEvent = event as any;
-			if (navEvent.navigationType === "traverse") {
-				event.preventDefault(); // Let browser handle natively with bfcache
-			}
-		});
-
-		// ========================================
-		// Scroll Position Handling
-		// ========================================
-		// Scroll to top instantly before swap to prevent scroll flash on forward navigation
-		document.addEventListener("astro:before-swap", (event) => {
-			const swapEvent = event as any;
-			if (swapEvent.navigationType === "push" || swapEvent.navigationType === "replace") {
-				window.scrollTo({ top: 0, behavior: "instant" });
-				if (swapEvent.newDocument) {
-					swapEvent.newDocument.documentElement.style.scrollBehavior = "auto";
-				}
-			}
-		});
-
-		// ========================================
-		// Reset UI State on Navigation
-		// ========================================
-		document.addEventListener("astro:page-load", () => {
-			// Close mobile menu (astro-navbar uses 'hidden' class)
-			const mobileMenu = document.querySelector(".mobile-menu");
-			if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
-				mobileMenu.classList.add("hidden");
-			}
-
-			// Reset mobile menu button state
-			const menuButton = document.getElementById("astronav-menu");
-			if (menuButton) {
-				menuButton.setAttribute("aria-expanded", "false");
-			}
-
-			// Reset header visibility (if using hide-on-scroll)
-			const header = document.querySelector("header");
-			if (header) {
-				(header as HTMLElement).style.transform = "translateY(0)";
-			}
-		});
-
-		// ========================================
-		// Navigation Loading Feedback (Progress Bar)
-		// ========================================
-		let progressInterval: ReturnType<typeof setInterval> | null = null;
-		let progressValue = 0;
-
-		document.addEventListener("astro:before-preparation", () => {
-			const progressBar = document.getElementById("nav-progress");
-			if (!progressBar) return;
-
-			// Reset and show progress bar
-			progressValue = 0;
-			progressBar.style.width = "0%";
-			progressBar.style.opacity = "1";
-
-			// Animate progress (simulated, reaches ~90% before actual load completes)
-			progressInterval = setInterval(() => {
-				progressValue += (90 - progressValue) * 0.1;
-				progressBar.style.width = `${progressValue}%`;
-			}, 50);
-		});
-
-		document.addEventListener("astro:page-load", () => {
-			const progressBar = document.getElementById("nav-progress");
-			if (!progressBar) return;
-
-			// Clear the interval
-			if (progressInterval) {
-				clearInterval(progressInterval);
-				progressInterval = null;
-			}
-
-			// Complete the progress bar
-			progressBar.style.width = "100%";
-
-			// Hide after completion
-			setTimeout(() => {
-				progressBar.style.opacity = "0";
-				setTimeout(() => {
-					progressBar.style.width = "0%";
-				}, 300);
-			}, 150);
-		});
-	</script>
-
-	<style is:global>
-		/* Touch feedback for mobile navigation */
-		a, button {
-			-webkit-tap-highlight-color: transparent;
-		}
-
-		a:active:not(:disabled),
-		button:active:not(:disabled) {
-			transform: scale(0.98);
-		}
-
-		/* Ensure buttons/links with explicit transforms don't get overridden */
-		.hover\:scale-105:active {
-			transform: scale(1.02) !important;
-		}
-	</style>
 </html>

@@ -1,43 +1,24 @@
 {
   "brand": {
-    "name": "Viva Medical",
-    "logo": "Viva Medical"
+    "name": "Praxis für Psychotherapie",
+    "logo": "Praxis für Psychotherapie"
   },
   "contact": {
-    "addressLine1": "123 Healthcare Drive, Suite 200",
-    "addressLine2": "Springfield, IL 62701",
-    "phone": "+1 (555) 123-4567",
-    "email": "hello@example.com"
+    "addressLine1": "Musterstraße 1",
+    "addressLine2": "8010 Graz, Österreich",
+    "phone": "+43 (0)000 000000",
+    "email": "praxis@beispiel.at"
   },
   "links": [
-    {
-      "label": "Home",
-      "href": "/",
-      "icon": "home"
-    },
-    {
-      "label": "About Us",
-      "href": "/about",
-      "icon": "info"
-    },
-    {
-      "label": "Services",
-      "href": "/services",
-      "icon": "clipboard"
-    },
-    {
-      "label": "Careers",
-      "href": "/careers",
-      "icon": "users"
-    },
-    {
-      "label": "Info",
-      "href": "/info",
-      "icon": "book"
-    }
+    { "label": "Start", "href": "/", "icon": "home" },
+    { "label": "Über mich", "href": "/about", "icon": "info" },
+    { "label": "Leistungen", "href": "/services", "icon": "clipboard" },
+    { "label": "Psychodrama", "href": "/psychodrama", "icon": "heart" },
+    { "label": "Ablauf & Kosten", "href": "/ablauf-und-kosten", "icon": "document" },
+    { "label": "FAQ", "href": "/info", "icon": "book" }
   ],
   "cta": {
-    "label": "Contact Us",
+    "label": "Erstgespräch anfragen",
     "href": "/contact"
   }
 }

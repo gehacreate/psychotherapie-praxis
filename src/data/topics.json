@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "aengste-panikattacken",
+    "cardTitle": "Ängste & Panikattacken",
+    "cardSummary": "Wenn Angst den Alltag bestimmt: Herzklopfen, „Was-wäre-wenn“-Gedanken, Vermeidung. Psychotherapie hilft, wieder mehr Spielraum zu gewinnen.",
+    "pageTitle": "Psychotherapie bei Ängsten & Panikattacken in Graz",
+    "metaDescription": "Psychotherapie bei Ängsten und Panikattacken in Graz: körperliche Symptome, Vermeidung, Gedankenkreisen – Psychodrama-Therapie, Erstgespräch 100 €, zeitnah möglich.",
+    "heroDescription": "Kaum etwas hat noch Platz neben der Angst? Sie verdrängt Schlaf, Arbeit und Beziehungen – und was einmal einfach war, braucht plötzlich Überwindung. Die gute Nachricht: Das kann wieder leichter werden.",
+    "intro": "Angst hat viele Gesichter. Gemeinsam schauen wir, wovor Ihre Angst Sie eigentlich bewahren will – und gewinnen Schritt für Schritt mehr Sicherheit zurück, in Ihrem Tempo, ohne Druck.",
+    "sections": [
+      { "heading": "Wie sich Ängste zeigen", "list": ["Körperlich: Herzklopfen, Atemnot, Zittern, Schwitzen, Druck auf der Brust, Verspannungen, Magen-Darm-Beschwerden", "In Gedanken: ständiges Grübeln und „Was-wäre-wenn“-Szenarien, Katastrophenfilme im Kopf, Konzentrationsprobleme", "Im Verhalten: Vermeidung von Orten, Menschen oder Situationen, Rückzug, ständiges Kontrollieren", "Als Panikattacke: eine plötzliche Welle intensiver Angst mit dem Gefühl, die Kontrolle zu verlieren"] }
+    ],
+    "approach": "Angst ist keine Schwäche und kein Zeichen, dass mit Ihnen etwas nicht stimmt. Sie will Sie ursprünglich schützen – nur steht sie Ihnen heute im Weg. Im Psychodrama müssen Sie Ihre Angst nicht nur beschreiben, sondern können ihr begegnen, sie ausprobieren und ganz neue Reaktionen erleben.",
+    "method": "Gerade bei Panikattacken und ängstlicher Vermeidung gehört Psychotherapie zu den am besten belegten Behandlungen (S3-Leitlinie „Behandlung von Angststörungen“, AWMF). Wichtig ist, dass Sie in Ihrem Tempo arbeiten – nicht gegen die Angst, sondern mit ihr im Gespräch.",
+    "faqs": [
+      { "id": "angst-vs-panik", "question": "Was ist der Unterschied zwischen Angst und einer Panikattacke?", "answer": "Angst ist eine Reaktion auf eine wahrgenommene Bedrohung und kann schützend sein. Eine Panikattacke ist eine Angstwelle, die scheinbar ohne Anlass auftritt und meist von heftigen Körperreaktionen begleitet wird. Beides lässt sich in der Therapie gut bearbeiten." },
+      { "id": "wie-schnell-angst", "question": "Wie schnell geht das?", "answer": "Viele Menschen spüren schon in der Orientierungsphase (ca. 5–10 Einheiten) eine Erleichterung – nicht, weil die Angst sofort verschwindet, sondern weil sie verständlicher und handhabbarer wird." },
+      { "id": "akute-krise-angst", "question": "Was, wenn ich gerade in einer akuten Krise bin?", "answer": "Dann zögern Sie bitte nicht, sofort Hilfe zu holen: Psychiatrisches Krisentelefon Steiermark 0800 44 99 33 (rund um die Uhr, anonym, kostenfrei), bei akuter Gefahr 144." }
+    ]
+  },
+  {
+    "slug": "depression-burnout-erschöpfung",
+    "cardTitle": "Depression, Burnout & Erschöpfung",
+    "cardSummary": "Körper schwer und träge, Gedanken um drei Uhr nachts, keine Freude mehr – auch psychosomatische Beschwerden ohne Befund. Ein Signal, das gehört werden will.",
+    "pageTitle": "Psychotherapie bei Depression, Burnout & Erschöpfung in Graz",
+    "metaDescription": "Hilfe bei Depression, Burnout, Erschöpfung und psychosomatischen Beschwerden in Graz: Psychodrama-Therapie, Erstgespräch 100 €, Plätze frei.",
+    "heroDescription": "Erschöpfung kündigt sich selten an. Manchmal ist es der Körper, der sich schwer anfühlt, manchmal Gedanken, die den Tag über nicht mehr loslassen – und manchmal nur das Gefühl, dass alles zu viel wird.",
+    "intro": "Gemeinsam schauen wir, was Ihre Erschöpfung aufrechterhält – und was Ihnen stattdessen guttun würde. Depressive Verstimmungen, Burnout, Schlafstörungen und psychosomatische Beschwerden gehören oft zusammen (S3-Leitlinie Unipolare Depression) und werden gemeinsam verständlicher.",
+    "sections": [
+      { "heading": "Wie sich Erschöpfung und Depression zeigen", "list": ["Körperlich: ständige Müdigkeit, Schlafstörungen, Appetitveränderungen, Kopf-/Rücken-/Magenschmerzen ohne Befund", "In Gedanken: Freudlosigkeit, Grübeln über Versagen, Gedankenkreisen", "Im Alltag: Rückzug, das Gefühl, nur noch zu funktionieren", "Bei Burnout: leere Batterie, Zynismus gegenüber der Arbeit, der Beruf ist nur noch Last"] }
+    ],
+    "approach": "Im Psychodrama machen wir unsichtbare Lasten sichtbar: Sie können erleben, wie sich Belastung anfühlt, sie aus etwas Abstand betrachten – und spielerisch einen anderen Umgang mit ihr proben.",
+    "method": "Körper und Psyche sind ein System: Was uns innerlich belastet, drückt sich oft körperlich aus. Psychotherapie ersetzt keine ärztliche Abklärung – wenn Beschwerden noch nicht untersucht wurden, gehört dieser Schritt dazu.",
+    "faqs": [
+      { "id": "depressiv-oder-kraftlos", "question": "Bin ich depressiv oder nur kraftlos?", "answer": "Das lässt sich pauschal nicht sagen – und Sie müssen es auch nicht vorher wissen. Beide Zustände sind gute Gründe, sich Unterstützung zu holen. Sie müssen nicht erst „schlimm genug“ sein." },
+      { "id": "schlafprobleme-therapie", "question": "Kann Psychotherapie bei Schlafproblemen helfen?", "answer": "Ja. Schlafprobleme hängen häufig mit Grübeln, Anspannung und ungelösten Themen zusammen. Wenn wir diese bearbeiten, beruhigt sich oft auch der Schlaf." },
+      { "id": "akute-krise-depression", "question": "Was, wenn ich gerade in einer akuten Krise bin?", "answer": "Psychiatrisches Krisentelefon Steiermark 0800 44 99 33 (rund um die Uhr, anonym, kostenfrei), bei akuter Gefahr 144." }
+    ]
+  },
+  {
+    "slug": "beziehung-partnerschaft",
+    "cardTitle": "Beziehung & Partnerschaft",
+    "cardSummary": "Immer gleiche Streitverläufe, stiller Rückzug, festgefahrene Rollen – im Einzelsetting alte Muster erkennen und neue Wege ausprobieren.",
+    "pageTitle": "Psychotherapie für Beziehung & Partnerschaft in Graz",
+    "metaDescription": "Psychotherapie für Beziehung und Partnerschaft in Graz: Beziehungsmuster erkennen, neue Wege ausprobieren – Psychodrama im Einzelsetting. Erstgespräch anfragen.",
+    "heroDescription": "Sie sagen lieber nichts mehr – weil Reden doch nichts ändert. Oder es endet immer gleich. Viele Paare leben zwischen stillen Rückzug und immer gleichen Konflikten. Keines dieser Themen bedeutet, dass Ihre Beziehung scheitert.",
+    "intro": "Wir holen Ihre Bedürfnisse und Verletzungen zurück ins Gespräch – ohne Schuldzuweisung. Alte Muster werden sichtbar: wo sie entstanden sind und wie sie sich heute einschleichen. Dann probieren wir gemeinsam neue Wege des Miteinanders aus.",
+    "sections": [
+      { "heading": "Woran man Beziehungsmuster erkennt", "list": ["Immer gleiche Streitereignisse: ein anderes Thema, derselbe Verlauf", "Rückzug und Vermeidung: schwierige Themen werden umgangen", "Rollen, die sich festgesetzt haben: wer immer nachgibt, wer fordert, wer schweigt", "Alte Wunden aus der Herkunftsfamilie, die unbemerkt weiterwirken", "Nach wichtigen Übergängen: Zusammenziehen, Kinder, Trennung"] }
+    ],
+    "approach": "Beziehungsmuster zeigen sich im Psychodrama besonders lebendig: Sie können für einen Moment wirklich die Position Ihrer Partnerin oder Ihres Partners einnehmen – buchstäblich. Was dann sichtbar wird, überrascht oft auf eine Weise, die im Nachdenken allein nicht möglich wäre.",
+    "method": "Wir arbeiten im Einzelsetting – bewusst: Wer die eigenen Anteile im Muster versteht, kann die Beziehung von einer Seite aus verändern. Partner:innen beziehen wir nicht direkt ein, im Psychodrama tauchen sie trotzdem auf – als Rolle, die Sie selbst einnehmen.",
+    "faqs": [
+      { "id": "paar-einzelsetting", "question": "Paarthemen im Einzelsetting – was kann das bewirken?", "answer": "Genau darin liegt die Stärke: Sie schauen, welche Rolle Sie selbst im Muster spielen. Was Sie verändern, wirkt in die Beziehung hinein – von einer Seite aus lässt sich vieles bewegen." },
+      { "id": "partner-auch-kommen", "question": "Kann meine Partnerin / mein Partner auch kommen?", "answer": "Ich begleite immer nur eine Person, damit ich unparteiisch an Ihrer Seite stehen kann. Wenn Ihr Gegenüber selbst Unterstützung sucht, verweise ich gern an Kolleg:innen in Graz." },
+      { "id": "dauer-beziehungsthema", "question": "Wie lange dauert die Bearbeitung eines Beziehungsthemas?", "answer": "Bei umschriebenen Themen reichen oft 10–25 Sitzungen; tiefer sitzende Muster brauchen manchmal länger. Wir besprechen regelmäßig, wo Sie stehen." }
+    ]
+  },
+  {
+    "slug": "berufsstress-arbeitsbelastung",
+    "cardTitle": "Berufsstress & Arbeitsbelastung",
+    "cardSummary": "Keine Kraft mehr nach Hause kommen, der Kopf kreist weiter – Belastungen klären, Grenzen setzen, Perspektiven finden, die zum Leben passen.",
+    "pageTitle": "Psychotherapie bei Berufsstress & Arbeitsbelastung in Graz",
+    "metaDescription": "Psychotherapie bei Berufsstress und Arbeitsbelastung in Graz: Erschöpfung, Leistungsdruck, „Ist das alles?“ – Psychodrama-Therapie, Termine gut mit dem Berufsalltag vereinbar.",
+    "heroDescription": "Sie kommen nach Hause und haben keine Kraft mehr – und trotzdem kreist der Kopf weiter um den Job. Wenn der Beruf, der einmal Sinn gemacht hat, nur noch Last ist, bleibt abends kaum noch etwas übrig.",
+    "intro": "Wir nehmen Ihren beruflichen Weg einmal ordentlich in den Blick – mit Wohlwollen und Abstand statt Selbstvorwürfen: Was trägt Sie? Was zehrt Sie aus? Wir klären Belastungen und Ängste und entwickeln Perspektiven, die wieder zu Ihrem Leben passen.",
+    "sections": [
+      { "heading": "Wie sich berufliche Belastung zeigt", "list": ["Körperlich: Anspannung, Verspannungen, Kopfschmerzen, Schlafstörungen – besonders das „Abschalten können“ fehlt", "In Gedanken: abends im Meeting, morgens schon erschöpft, ständig erreichbar sein", "Emotional: Gereiztheit, Zynismus, selbst gelungene Arbeit macht nicht mehr zufrieden", "Als Angst: vor Fehlern, vor Gesprächen mit Vorgesetzten, vor der Frage „Ist das alles?“", "Als Erschöpfung: Burnout entwickelt sich selten über Nacht – meist aus vielen „Ich muss noch schnell“-Momenten"] }
+    ],
+    "approach": "Im Psychodrama können Sie Ihren Arbeitsalltag Revue passieren lassen und Alternativen ausprobieren: das schwierige Gespräch neu führen, endlich Nein sagen, für einen Moment den Platz der Chefin oder des Kollegen einnehmen. Neue Möglichkeiten entstehen oft im Tun, nicht nur im Reden.",
+    "method": "Ein Wort an die Männer: Sie gehen deutlich seltener in Therapie – nicht, weil sie weniger belastet wären, sondern weil ihnen der Schritt schwerer fällt. Wer nach außen alles meistert, während die eigenen Kräfte längst zur Neige gehen: Sie sind hier richtig.",
+    "faqs": [
+      { "id": "burnout-krankheit", "question": "Ist Burnout eine Krankheit?", "answer": "Burnout beschreibt einen Zustand tiefer beruflicher Erschöpfung mit körperlichen und psychischen Symptomen. Ob zusätzlich etwas vorliegt (z. B. eine Depression), klärt am besten ärztlich; therapeutisch begleite ich Sie gern dabei." },
+      { "id": "arbeitsplatz-verbessern", "question": "Kann Therapie meinen Arbeitsplatz verbessern?", "answer": "Den Arbeitsplatz selbst nicht – aber Ihr Verhältnis zu ihm: was Sie sich zumuten, welche Grenzen Sie setzen. Viele verändern nach der Therapie ihren Job, viele bleiben und fühlen sich deutlich besser. Beides ist ein Erfolg." }
+    ]
+  },
+  {
+    "slug": "trauer-verlust-chronische-krankheit",
+    "cardTitle": "Trauer, Verlust & chronische Krankheit",
+    "cardSummary": "Zeit und Raum für Abschied – ohne Zeitdruck und ohne die Vorstellung, wie Trauer „richtig“ auszusehen hat. Auch bei chronischer Erkrankung.",
+    "pageTitle": "Psychotherapie bei Trauer, Verlust & chronischer Krankheit in Graz",
+    "metaDescription": "Begleitung bei Trauer, Verlust und chronischer Krankheit in Graz: Raum für Abschied und neue Perspektiven – Psychodrama-Therapie. Erstgespräch anfragen.",
+    "heroDescription": "Verluste können zermürben und ganz allein zurücklassen – der Tod eines Menschen, das Ende einer Lebensphase, ein Abschied, der nie richtig stattfinden durfte. Wer chronisch krank ist, verliert oft mehr als Gesundheit: Hoffnung, Geduld, manchmal das Bild von sich selbst.",
+    "intro": "In der Praxis darf all das sein – ohne Zeitdruck und ohne vorgefertigte Vorstellung, wie Trauer „richtig“ auszusehen hat. Wir nehmen Abschied, wo Abschied nötig ist, und finden Halt, wo etwas nicht mehr veränderbar ist.",
+    "sections": [
+      { "heading": "Wie sich Trauer und Verlust zeigen", "list": ["Gefühle: tiefe Traurigkeit, aber auch Wut, Schuldgefühle, Empfindungslosigkeit oder unerwartete Heiterkeit – alles darf vorkommen", "Körperlich: Erschöpfung, Schlafstörungen, Appetitlosigkeit", "Im Alltag: Wellen ohne Vorwarnung – ein Geruch, ein Lied, ein Datum", "Bei chronischer Krankheit: Trauer um das frühere Leben, Angst vor der Zukunft, Erschöpfung durch Termine, das Gefühl, eine Last zu sein"] }
+    ],
+    "approach": "Im Psychodrama kann ein Gespräch möglich werden, für das es im echten Leben keine Gelegenheit mehr gibt – mit einem verstorbenen Menschen, mit einer früheren Version Ihrer selbst oder mit Ihrer Erkrankung. Solche Begegnungen eröffnen einen Abschied, den Worte allein oft nicht finden.",
+    "method": "Trauer lässt sich nicht wegzaubern – aber sie muss nicht alles bestimmen. Es gibt keine Frist, nach der Trauer „abgeschlossen“ sein muss. Unterstützung ist sinnvoll, wenn Sie nach Monaten noch sehr belastet sind oder den Alltag nicht mehr bewältigen können.",
+    "faqs": [
+      { "id": "wie-lange-trauern", "question": "Wie lange darf man trauern?", "answer": "Es gibt keine Frist. Trauer verändert sich mit der Zeit – in ihrem eigenen Rhythmus. Das heißt nicht, dass mit Ihnen etwas nicht stimmt – nur, dass Sie gerade mehr tragen, als eine Person allein tragen kann." },
+      { "id": "therapie-chronisch-krank", "question": "Hilft Therapie auch bei chronischer Krankheit?", "answer": "Ja – nicht gegen die Krankheit selbst, aber gegen das, was sie mit sich bringt: Angst, Erschöpfung, Wut, Trauer um das frühere Leben, Belastungen in Beziehungen. Psychotherapie unterstützt nachweislich Lebensqualität und den Umgang mit der Erkrankung." },
+      { "id": "lebensabschnitt-trauer", "question": "Ich trauere um einen verlorenen Lebensabschnitt – ist das auch ein Grund?", "answer": "Absolut. Verlust heißt nicht nur Tod: das Ende einer Beziehung, der Auszug der Kinder, das Ende einer Karriere, ein Abschied vom Selbstbild. Auch dafür darf man sich Raum nehmen." }
+    ]
+  }
+]

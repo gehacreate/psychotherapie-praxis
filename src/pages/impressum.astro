@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import Heading from "../components/Heading.astro";
+import heroImage from "../assets/placeholders/hero-main-placeholder.jpg";
+---
+
+<Layout
+	title="Impressum & Datenschutz"
+	description="Impressum und Datenschutzerklärung der Praxis für Psychotherapie in Graz (Platzhalter — vor Veröffentlichung durch echte Angaben ersetzen)."
+>
+	<PageHero
+		title="Impressum & Datenschutz"
+		description="Angaben gemäß § 5 TMG, Psychotherapiegesetz 2024 und DSGVO."
+		image={heroImage}
+	/>
+
+	<section class="section bg-theme-surface">
+		<div class="container narrow prose prose-lg max-w-none text-theme-text-secondary">
+			<Heading level="h2" class="mb-4">Impressum</Heading>
+			<p><strong>Praxis für Psychotherapie</strong><br />[Name der Therapeutin / des Therapeuten]<br />Musterstraße 1<br />8010 Graz, Österreich</p>
+			<p>Telefon: +43 (0)000 000000<br />E-Mail: praxis@beispiel.at</p>
+			<p><strong>Berufsbezeichnung:</strong> Psychotherapeut in Fachausbildung unter Lehrsupervision (verliehen in Österreich, ÖAGG-PD)<br />
+			<strong>Rechtsgrundlagen:</strong> Psychotherapiegesetz 2024 (PsychThG), Berufsordnung der zuständigen Psychotherapeutenkammer (z. B. Psychotherapeutenkammer Steiermark)</p>
+
+			<Heading level="h2" class="mt-12 mb-4">Datenschutz</Heading>
+			<p>Als Psychotherapeut unterliege ich der <strong>gesetzlichen Schweigepflicht</strong>. Gesundheitsdaten sind besonders geschützte personenbezogene Daten (Art. 9 DSGVO) und werden nur erhoben, soweit für die Behandlung erforderlich, und nur so lange gespeichert, wie gesetzliche Aufbewahrungspflichten es verlangen (§ 630f BGB analog, in der Regel 10 Jahre).</p>
+			<p>Diese Website ist statisch (Astro SSG): keine Cookies, kein Tracking, keine Übermittlung personenbezogener Daten an Dritte. Beim Aufruf fallen technisch bedingt Server-Logdaten des Hosters an (Art. 6 Abs. 1 lit. f DSGVO).</p>
+			<p>Ihre Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch (Art. 15–21 DSGVO) sowie Beschwerde bei der Datenschutzbehörde.</p>
+			<p class="text-sm italic">Hinweis: Platzhalter — vor Veröffentlichung durch echte Angaben ersetzen und anwaltlich prüfen lassen.</p>
+		</div>
+	</section>
+</Layout>

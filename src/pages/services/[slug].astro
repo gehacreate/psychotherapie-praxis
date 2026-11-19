@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import FaqAccordion from "../../components/FaqAccordion.astro";
+import CallToActionSection from "../../components/CallToActionSection.astro";
+import Heading from "../../components/Heading.astro";
+import Icon from "../../components/Icon.astro";
+import heroImage from "../../assets/placeholders/service-detail-placeholder.jpg";
+import topics from "../../data/topics.json";
+
+export function getStaticPaths() {
+	return topics.map((t) => ({ params: { slug: t.slug }, props: { topic: t } }));
+}
+
+const { topic } = Astro.props;
+---
+
+<Layout title={topic.pageTitle} description={topic.metaDescription}>
+	<PageHero title={topic.pageTitle} description={topic.heroDescription} image={heroImage} />
+
+	<section class="section bg-theme-surface">
+		<div class="container narrow">
+			<p class="text-lg text-theme-text-secondary leading-relaxed mb-10">{topic.intro}</p>
+
+			{topic.sections.map((s) => (
+				<>
+					<Heading level="h2" class="mb-6 mt-12">{s.heading}</Heading>
+					<ul class="space-y-3 mb-8">
+						{s.list.map((item) => (
+							<li class="flex items-start text-theme-text-secondary text-lg leading-relaxed">
+								<span class="flex-shrink-0 w-6 h-6 rounded-full bg-theme-primary-lighter/20 flex items-center justify-center mr-3 mt-1">
+									<Icon name="check" size="sm" class="text-theme-primary" />
+								</span>
+								<span>{item}</span>
+							</li>
+						))}
+					</ul>
+				</>
+			))}
+
+			<Heading level="h2" class="mb-6 mt-12">Wie ich Sie begleite</Heading>
+			<p class="text-lg text-theme-text-secondary leading-relaxed mb-10">{topic.approach}</p>
+
+			<Heading level="h2" class="mb-6">Meine Arbeitsweise</Heading>
+			<p class="text-lg text-theme-text-secondary leading-relaxed mb-4">{topic.method}</p>
+			<p class="mb-10"><a href="/psychodrama" class="text-theme-primary font-medium underline">Was ist Psychodrama?</a></p>
+
+			<Heading level="h2" class="mb-6 mt-12">Häufige Fragen</Heading>
+			<FaqAccordion items={topic.faqs} />
+
+			<div class="mt-10 p-6 bg-theme-surface-muted rounded-xl border border-theme-border text-theme-text-secondary leading-relaxed">
+				<strong class="text-theme-text-primary">Rahmenbedingungen:</strong> Einzelsetting in der Praxis in Graz. Erstgespräch und Folgetermine kosten 100&nbsp;€ je Einheit (45 Minuten). Terminvereinbarung Mo–Fr 09:00–18:00 Uhr. Hausbesuche in Graz bei eingeschränkter Mobilität auf Anfrage möglich.
+			</div>
+		</div>
+	</section>
+
+	<CallToActionSection
+		heading="Für den Anfang genügt eine kurze Nachricht"
+		subheading="Im unverbindlichen Erstgespräch schauen wir gemeinsam, wo Sie stehen — Sie entscheiden in Ruhe, ob es passt."
+		primaryButtonText="Erstgespräch anfragen"
+		primaryButtonLink="/contact"
+	/>
+</Layout>

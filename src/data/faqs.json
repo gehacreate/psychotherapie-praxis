@@ -1,29 +1,52 @@
 [
   {
-    "id": "what-are-services",
-    "question": "What are healthcare services?",
-    "answer": "<p>Healthcare services are the medical care and support people receive to stay well, treat illness, and recover safely.</p><p>We focus on three areas:</p><ul><li><strong>Prevention:</strong> screenings, vaccinations, and education</li><li><strong>Treatment:</strong> expert care for acute and chronic conditions</li><li><strong>Recovery:</strong> therapies and support after injury or surgery</li></ul><p>With home care, licensed clinicians come to you. We coordinate with your physician, create a personalized care plan, and keep you and your family informed every step of the way.</p>"
+    "id": "was-ist-psychotherapie",
+    "question": "Was ist Psychotherapie?",
+    "answer": "<p>Psychotherapie ist ein <strong>geschützter Raum</strong>, in dem Sie über alles sprechen können – von Alltagsstress bis zu tiefgreifenden Krisen. Sie ist <strong>kein Zeichen von Schwäche</strong>, sondern ein Schritt, um sich selbst besser zu verstehen.</p><p>Wir arbeiten mit <strong>humanistischer Psychotherapie und Psychodrama</strong>: Ihre Stärken stehen im Mittelpunkt, kreative Methoden (z. B. Aufstellungen, Rollenspiele) helfen, Blockaden zu lösen – und Sie bestimmen das Tempo.</p>"
   },
   {
-    "id": "what-conditions",
-    "question": "What conditions do you treat?",
-    "answer": "<p>We care for a broad range of needs—from everyday concerns to complex, ongoing conditions.</p><ul><li>Chronic conditions: diabetes, hypertension, heart and lung disease</li><li>Recovery support: post‑surgical care, rehabilitation, pain management</li><li>Specialty care: oncology support, hormone therapy, infusion and medication management</li></ul><p>Every patient receives a personalized plan developed with their physician and our clinical team.</p>"
+    "id": "wann-richtiger-zeitpunkt",
+    "question": "Wann ist der richtige Zeitpunkt für Psychotherapie?",
+    "answer": "<p>Früher, als viele denken. Man muss nicht erst an einem Tiefpunkt angekommen sein – auch wer „eigentlich noch funktioniert“, darf sich Hilfe holen. Wenn der Gedanke, mit jemandem zu sprechen, immer wiederkehrt, ist das Grund genug. Im Erstgespräch klären wir gemeinsam und unverbindlich, ob und was für Sie sinnvoll wäre.</p>"
   },
   {
-    "id": "why-home-healthcare",
-    "question": "Why choose home healthcare services?",
-    "answer": "<p>Home care brings quality healthcare to your door—comfortably and conveniently.</p><ul><li><strong>Comfort:</strong> receive care in familiar surroundings</li><li><strong>Convenience:</strong> fewer trips to clinics and hospitals</li><li><strong>Better continuity:</strong> one team coordinating your care plan</li><li><strong>Family involvement:</strong> education and regular updates for loved ones</li></ul><p>Many people find they recover faster and feel more at ease when cared for at home.</p>"
+    "id": "unterschied-psychiatrie",
+    "question": "Was ist der Unterschied zwischen Psychiatrie, Klinischer Psychologie und Psychotherapie?",
+    "answer": "<ul><li><strong>Psychiatrie:</strong> Ärztinnen und Ärzte stellen Diagnosen und können Medikamente verordnen.</li><li><strong>Klinische Psychologie:</strong> grundsätzliche Diagnostik, keine Medikamentenverordnung.</li><li><strong>Psychotherapie:</strong> Therapiegespräch und kreative Methoden stehen im Vordergrund – ebenfalls keine Medikamentenverordnung.</li></ul><p>Kurz: Nur die Psychiatrie verordnet Medikamente.</p>"
   },
   {
-    "id": "what-is-provider",
-    "question": "What is a healthcare service provider?",
-    "answer": "<p>A healthcare service provider is a licensed organization that delivers professional medical care and support.</p><p>What that means for you:</p><ul><li>Care from licensed clinicians who meet strict training and quality standards</li><li>Coordination with your doctors, pharmacy, and other specialists</li><li>Clear communication, safety checks, and ongoing quality review</li></ul><p>Our goal is simple: safe, effective, compassionate care that fits your life.</p>"
+    "id": "fachausbildung-supervision",
+    "question": "Was bedeutet „Psychotherapeut in Fachausbildung unter Lehrsupervision“?",
+    "answer": "<p>Das ist die Berufsbezeichnung nach dem Psychotherapiegesetz 2024. Die Therapeutin / der Therapeut arbeitet eigenverantwortlich – mit eigenem Behandlungsvertrag und eigener Verschwiegenheitspflicht – und absolviere gleichzeitig den letzten Ausbildungsabschnitt (Masterstudium und Fachspezifikum). In regelmäßiger Lehrsupervision werden die laufenden Therapien mit einer erfahrenen Lehrtherapeutin reflektiert.</p><p>Sie erhalten also beides: eine vollwertige Behandlung und zusätzliche Qualitätssicherung.</p>"
   },
   {
-    "id": "care-settings",
-    "question": "What care settings do you provide services in?",
-    "answer": "<p>We deliver care wherever it’s safest and most comfortable for you.</p><ul><li><strong>At home:</strong> most services provided in your own space</li><li><strong>Assisted living or skilled nursing:</strong> coordinated onsite care</li><li><strong>Clinics and partner facilities:</strong> for specialized treatments when needed</li></ul><p>We handle smooth transitions between settings so your care plan stays on track.</p>"
+    "id": "verschwiegenheitspflicht",
+    "question": "Wie ist das mit der Verschwiegenheitspflicht?",
+    "answer": "<p>Die Verschwiegenheitspflicht hat höchste Bedeutung (Psychotherapiegesetz). Alles, was Sie anvertrauen, bleibt vertraulich – keine Weitergabe an Familie, Behörden oder Versicherungen ohne Ihre ausdrückliche, schriftliche Zustimmung, und auch dann nur im von Ihnen festgelegten Umfang.</p>"
+  },
+  {
+    "id": "kosten-kassenplatz",
+    "question": "Was kostet die Therapie – und gibt es Kassenplätze?",
+    "answer": "<p>Erstgespräch und Folgetermine kosten <strong>100&nbsp;€ je Einheit (45 Minuten)</strong>. Während der Fachausbildung unter Lehrsupervision ist eine Kassenabrechnung rechtlich nicht möglich; viele private Zusatzversicherungen übernehmen einen Teil der Kosten.</p><p>Kostenlose Alternativen in Graz: <strong>Netzwerk Psychotherapie Steiermark</strong> (für ÖGK-Versicherte kostenfrei über die e-card) und die psychosozialen Beratungsstellen der Gesellschaft zur Förderung seelischer Gesundheit.</p>"
+  },
+  {
+    "id": "erstgespraech-ablauf",
+    "question": "Wie läuft das Erstgespräch ab?",
+    "answer": "<p>Entspannt: Ich stelle mich und meine Arbeitsweise vor, Sie erzählen von Ihrem Anliegen – so viel oder wenig, wie Sie möchten. Danach besprechen wir Ziele und Rahmenbedingungen. Sie müssen sich nicht vorbereiten und entscheiden in Ruhe, ob es für Sie passt.</p>"
+  },
+  {
+    "id": "haeufigkeit-sitzungen",
+    "question": "Wie oft finden die Sitzungen statt?",
+    "answer": "<p>Zu Beginn meist wöchentlich (ggf. 1–2× pro Woche in akuten Phasen), später alle 1–2 Wochen oder nach Bedarf. Wir passen den Rhythmus flexibel an Sie an.</p>"
+  },
+  {
+    "id": "online-hausbesuche",
+    "question": "Gibt es Online-Therapie oder Hausbesuche?",
+    "answer": "<p>Aktuell arbeite ich bewusst vor Ort in der Praxis in Graz – das persönliche Miteinander und die raumbezogenen Methoden des Psychodramas sind ein wichtiges Qualitätsmerkmal. Bei eingeschränkter Mobilität biete ich Hausbesuche in Graz an (gegen Aufwandsentschädigung). Online-Formate sind grundsätzlich denkbar und werden für die Zukunft im Auge behalten.</p>"
+  },
+  {
+    "id": "dauer-therapie",
+    "question": "Wie lange dauert eine Psychotherapie?",
+    "answer": "<p>Das hängt von Ihren Anliegen und Zielen ab. Bei umschriebenen Themen reichen oft 10–25 Sitzungen; wenn Beschwerden länger bestehen, kann die Therapie auch mehrere Monate oder länger dauern. Wir besprechen regelmäßig, wo Sie stehen – und Sie können jederzeit pausieren oder beenden.</p>"
   }
 ]
-
-
